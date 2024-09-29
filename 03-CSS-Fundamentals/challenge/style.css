@@ -124,7 +124,7 @@ h2::before {
 
 .yellow {
     background-color: yellow;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: 30px;
     width: 40px;
     height: 40px;
