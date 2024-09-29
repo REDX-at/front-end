@@ -18,7 +18,7 @@ article {
 }
 
 .details {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 p strong {
     font-family: sans-serif;
@@ -40,7 +40,7 @@ p {
     margin-top: 0px;
 }
 
-a:link {
+a:link, a:visited {
     font-size: 22px;
     color: black;
 }
@@ -98,4 +98,58 @@ h2 {
 
 .shoes-img {
     margin-bottom: 7px;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::before {
+    content: "SALE";
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    padding: 8px 18px;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+}
+
+.colors {
+    /* background-color: red; */
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.yellow {
+    background-color: yellow;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.green {
+    background-color: green;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.blue {
+    background-color: blue;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.red {
+    background-color: red;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
 }
