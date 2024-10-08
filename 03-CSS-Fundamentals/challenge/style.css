@@ -1,10 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 article {
     border: 5px solid;
 }
 
 
 .container {
-    width: 900px;
+    max-width: 1200px;
     margin: 50px auto;
 }
 
@@ -97,7 +103,9 @@ h2 {
 }
 
 .shoes-img {
-    margin-bottom: 7px;
+    width: 90%;
+    height: 100%;
+    /* margin-bottom: 7px; */
 }
 
 h2 {
@@ -152,4 +160,50 @@ h2::before {
     margin-top: 30px;
     width: 40px;
     height: 40px;
+}
+
+ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.image {
+    align-self: normal;
+    /* background-color: black; */
+}
+
+.seconde-el {
+    margin-top: 20px;
+    /* background-color: yellow; */
+}
+.last-el {
+    padding: 0;
+    /* background-color: green; */
+}
+
+.flex-dollar {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fix {
+    width: 33%;
 }
