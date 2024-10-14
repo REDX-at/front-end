@@ -1,14 +1,14 @@
 * {
   /* border-top: 10px solid #1098ad; */
   margin: 0;
-  pading:  0;
+  padding: 0;
 }
 
 .container {
   width: 1300px;
   /* margin-left: auto;
   margin-right: auto; */
-  margin: 0 auto;
+  margin:0 auto;
   /* position: relative; */
 }
 
@@ -33,7 +33,7 @@ nav a:link:last-child {
 .main-header {
   background-color: #f7f7f7; 
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   height: 80px; 
 }
 
@@ -43,7 +43,7 @@ nav a:link:last-child {
 }
 
 article{
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 nav {
@@ -59,7 +59,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 50px;
-  width: 500px;
+  /* width: 500px; */
 }
 
 h1,
@@ -218,7 +218,7 @@ button {
   padding: 20px;
   cursor: pointer;
   position: absolute;
-  right: 70px;
+  right: 0;
   bottom: 0;
   /* top: 0;
   right: 0; */
@@ -291,7 +291,8 @@ li:last-child {
   margin-bottom: 0;
 }
 
-.row {
+/* FLEXBOX LAYOUT */
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 20px;
@@ -299,11 +300,37 @@ li:last-child {
 }
 
 article {
-  /* flex: 0 0 825px */
   flex: 1;
   margin-bottom: 0;
 }
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+
+}
+
+aside {
+  position: relative;
+}
+
+footer {
+  background-color: rgb(43, 148, 193);
+  grid-column: 1 / -1;
 }
