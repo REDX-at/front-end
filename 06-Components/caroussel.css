@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container {
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(43, 130, 85);
+    position: relative;
+    border-radius: 20px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+    stroke: green;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+}
+
+.test {
+    position: absolute;
+    width: 50px;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+    height: 50px;
+    border-radius: 50%;
+    /* padding: 100px; */
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: white;
+    stroke: red;
+    right: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    left: -18px;
+}
+/* img {
+    position: absolute;
+    top: -50px;
+    left: 65px;
+    border-radius: 50px;
+} */
+
+img {
+    align-self: center;
+    margin-left: 130px;
+    scale: 1.5;
+    border-radius: 20px;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.seconde-el {
+    padding-left: 80px;
+    align-self: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.seconde-el {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 40px;
+
+}
+
+.seconda {
+    font-size: 15px;
+}
+
+.caroussel {
+    /* width: 200px;
+    height: 200px; */
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 230px;
+    right: 420px;
+}
+
+/* body {
+    display: grid;
+    grid-template-rows: auto auto;
+} */
+
+.all {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(43, 130, 85);
+    border-radius: 50%;
+    stroke: rgb(43, 130, 85);
+}
+
+.two, .three, .four {
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid rgb(43, 130, 85);
+}
