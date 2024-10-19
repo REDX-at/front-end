@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..600;500;900&display=swap" rel="stylesheet">
+    <title>Hero Section</title>
+
+    <style>
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+        /*
+          COLOR SYSTEM
+          #087f5b
+          #330a40
+          #099268
+          #868e96
+           */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+            height: 100vh;
+            font-family: 'Inter' , sans-serif;
+            color: white;
+            line-height: 1;
+            background-image: url('hero.jpg');
+            background-size: cover;
+            /* background-position: center; */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-section {
+            /* background-color: red; */
+            width: 80%;
+            height: 70%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+
+        .second-el {
+            justify-self: end;
+        }
+
+        .first-el {
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+
+        .infos {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        button {
+            width: 180px;
+            height: 40px;
+            background-color: rgb(255, 123, 0);
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .fix-padding {
+            width: 600px;
+        }
+        .-fix-me {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="first-el">
+            <p class="bold">LOGO</p>
+            <div class="infos">
+                <h1 class="-fix-me">A healthy meal delivred to your door, every single day</h1>
+                <p class="fix-padding">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat 
+                    quibusdam distinctio doloribus sequi reiciendis fugiat obcaecati, odit 
+                    tempora recusandae aut? Omnis nostrum possimus ut recusandae necessitatibus 
+                    excepturi assumenda amet ab.
+                </p>
+                <button>Start Eating Well</button>
+            </div>
+        </div>
+        <div class="second-el">
+            <p class="bold">NAVIGATION</p>
+        </div>
+    </div>
+</body>
+</html>

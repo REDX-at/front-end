@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..600;500;900&display=swap" rel="stylesheet">
+    <title>Accordion Component</title>
+
+    <style>
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+        /*
+          COLOR SYSTEM
+          #087f5b
+          #330a40
+          #099268
+          #868e96
+           */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+        body {
+            font-family: 'Inter' , sans-serif;
+            color: #0e0528;
+            line-height: 1;
+            /* background-color: red; */
+        }
+
+        .next {
+            width: 700px;
+            height: 300px;
+            /* background-color: red; */
+            /* background-color: white; */
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            color: #087f5b;
+            /* background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); */
+        }
+
+        .element {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-icon {
+            /* justify-self: center; */
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid #087f5b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .third {
+            background-color: #087f5b;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .third:hover {
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: #087f5b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #087f5b;
+        }
+
+        .btn-icon:hover {
+            background-color: #087f5b;
+        }
+
+        .icon:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="next">
+        <button class="btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon icon-left">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <div class="element">
+            <button><p>1</p></button>
+            <button><p>2</p></button>
+            <button class="third">
+                <p>3</p>
+            </class=>
+            </button>
+            <button><p>4</p></button>
+            <button><p>5</p></button>
+            <button><p>6</p></button>
+            <button><p>...</p></button>
+            <button><p>23</p></button>
+        </div>
+        <button class="btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon icon-right">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button> 
+    </div>
+</body>
+</html>

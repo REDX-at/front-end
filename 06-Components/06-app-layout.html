@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #343a40;
+            font-size: 24px;
+            background-color: violet;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            /* height: 100vh; */
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 30px;
+            grid-row: span 2;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        menu {
+            background-color: #7048e8;
+            color: #fff;
+            grid-column: span 4;
+        }
+
+        section {
+            background-color: #e9ecef;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        aside {
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #e9ecef;
+            display: flex;
+        }
+
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto auto 1fr auto;
+            grid-template-rows: auto 1fr;
+            background-color: white;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+        }
+
+        .mail-view {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 30px 100px;
+        }
+        menu {
+            grid-column: span 3;
+            height: 100px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .mail {
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgb(176, 176, 176);
+            padding: 30px 150px;
+            margin: 40px 10px;
+        }
+
+        .additional {
+            font-weight: bold;
+            padding: 30px 10px;
+        }
+
+        .menu-bar {
+            font-size: 24px;
+            background-color: #563aaa;
+            padding: 5px 20px;
+        }
+        .firs-one {
+            margin-left: 2%;
+        }
+
+        .Trash {
+            background-color: red;
+            justify-self: end;
+            margin-left: auto;
+            margin-right: 2%;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Nav</nav>
+        <menu>
+            <button class="menu-bar firs-one">New</button>
+            <button class="menu-bar">Reply</button>
+            <button class="menu-bar">Forward</button>
+            <button class="menu-bar">Mark unread</button>
+            <button class="menu-bar Trash">Trash</button>
+        </menu>
+        <section>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+            <div class="mail">Email 1</div>
+        </section>
+        <main>
+            <div class="mail-view">
+                Email view
+            </div>
+        </main>
+        <aside>
+            <div class="additional">
+                Additional info
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
